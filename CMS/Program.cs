@@ -55,10 +55,8 @@ namespace CMS
                 }
 
             } while (!isExist);
+            Console.WriteLine("再见！");
             Console.Read();
-        }
-
-        
-        
+        }        
     }
 }
