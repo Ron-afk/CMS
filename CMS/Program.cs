@@ -9,12 +9,11 @@ namespace CMS
             return Console.ReadLine();
         }
 
-        static void Main(string[] args)
+        public class User
         {
-            Console.WriteLine("=====客户管理系统=====");
-            Console.WriteLine("请登录");
-            bool isExist = false;
-            do
+            public bool isUserLogin;
+
+            public void Login()
             {
                 string username;
                 string password;
@@ -22,18 +21,27 @@ namespace CMS
                 if (username != "Ron")
                 {
                     Console.WriteLine("查无此人");
-                    continue;
+                    return;
                 }
 
                 password = CmdReader("请输入密码：");
                 if (password != "123456")
                 {
                     Console.WriteLine("密码错误");
-                    continue;
+                    return;
                 }
+                isUserLogin = true;
+            }
+        }
+
+        public class Menu
+        {
+            public void ShowMenu()
+            {
+                bool isExist = false;
                 while (!isExist)
                 {
-                    
+
                     string choise = CmdReader("1.客户管理\n2.预约管理\n3.系统设置\n4.退出");
                     switch (choise)
                     {
@@ -53,8 +61,40 @@ namespace CMS
                             break;
                     }
                 }
+            }
+        }
 
-            } while (!isExist);
+        public class CMSController
+        {
+            public void Start(User user, Menu menu)
+            {
+                do
+                {
+                    user.Login();
+                } while (!user.isUserLogin);
+
+                menu.ShowMenu();
+                
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("=====客户管理系统=====");
+            Console.WriteLine("请登录");
+            bool isExist = false;
+            
+            // initialize user
+            User user = new User();
+
+            // initialize menu
+            Menu menu = new Menu();
+
+            CMSController controller = new CMSController();
+
+            controller.Start(user, menu);
+
+            
             Console.WriteLine("再见！");
             Console.Read();
         }        
