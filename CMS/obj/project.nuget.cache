@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RkMWjOrjEWjWicHhiuQqnLlCDqlepnqtzIthMV9RiIhv7eNRm+0FwsSSEoKF6nAtXnuB3QoPjy0MmpSQwcIG/g==",
+  "dgSpecHash": "Jyfpoi4VIZUVdegu/3Bf1CmY0RKiCTcmBEv065SOdzhCnJv9CNv36V5qqUrk6ridU5HfdBxBBp4Oyiw/i8lljw==",
   "success": true,
   "projectFilePath": "/Users/rangxiao/Desktop/C#学习/CMS/CMS/CMS.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/rangxiao/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/rangxiao/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

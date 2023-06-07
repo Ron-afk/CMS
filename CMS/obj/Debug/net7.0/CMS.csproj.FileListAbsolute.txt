@@ -28,3 +28,6 @@
 /Users/rangxiao/Desktop/C#学习/CMS/CMS/obj/Debug/net7.0/CMS.pdb
 /Users/rangxiao/Desktop/C#学习/CMS/CMS/obj/Debug/net7.0/CMS.genruntimeconfig.cache
 /Users/rangxiao/Desktop/C#学习/CMS/CMS/obj/Debug/net7.0/ref/CMS.dll
+/Users/rangxiao/Desktop/C#学习/CMS/CMS/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/rangxiao/Desktop/C#学习/CMS/CMS/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/rangxiao/Desktop/C#学习/CMS/CMS/obj/Debug/net7.0/CMS.csproj.CopyComplete
